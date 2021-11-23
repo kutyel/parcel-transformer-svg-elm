@@ -2,12 +2,12 @@
   "name": "parcel-transformer-svg-elm",
   "version": "1.0.0",
   "description": "A Parcel 2 plugin to turn SVGs into elm/svg",
-  "main": "index.js",
+  "main": "src/SVGTransformer.js",
   "scripts": {
     "test": "jest"
   },
   "engines": {
-    "node": ">= 14.0.0",
+    "node": ">= 14.7.4",
     "parcel": "^2.0.1"
   },
   "repository": {
@@ -18,7 +18,8 @@
     "parcel",
     "svg",
     "elm",
-    "plugin"
+    "plugin",
+    "svg2elm"
   ],
   "author": "Flavio Corpa <flaviocorpa@gmail.com>",
   "license": "MIT",
