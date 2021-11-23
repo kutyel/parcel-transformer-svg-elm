@@ -1,18 +1,16 @@
-const path = require('path')
-const { Transformer } = require('@parcel/plugin')
-const { generateSvgFunction } = require('svg2elm')
+import { parse } from 'path'
+import { Transformer } from '@parcel/plugin'
+import { generateSvgFunction } from 'svg2elm'
 
 const getComponentName = (filePath) => {
   const validCharacters = /[^a-zA-Z0-9_-]/g
-  return path.parse(filePath).name.replace(validCharacters, '')
+  return parse(filePath).name.replace(validCharacters, '')
 }
 
-module.exports = new Transformer({
+export default new Transformer({
   async transform({ asset }) {
     const source = await asset.getCode()
     const componentName = getComponentName(asset.filePath)
-
-    // Run it through the svg2elm compiler
     const code = await generateSvgFunction(componentName, source)
 
     asset.type = 'elm'
