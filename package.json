@@ -1,0 +1,33 @@
+{
+  "name": "parcel-transformer-svg-elm",
+  "version": "1.0.0",
+  "description": "A Parcel 2 plugin to turn SVGs into elm/svg",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">= 14.0.0",
+    "parcel": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutyel/parcel-transformer-svg-elm.git"
+  },
+  "keywords": [
+    "parcel",
+    "svg",
+    "elm",
+    "plugin"
+  ],
+  "author": "Flavio Corpa <flaviocorpa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kutyel/parcel-transformer-svg-elm/issues"
+  },
+  "homepage": "https://github.com/kutyel/parcel-transformer-svg-elm#readme",
+  "dependencies": {
+    "parcel": "^2.0.1",
+    "svg2elm": "^1.2.4"
+  }
+}
